@@ -106,7 +106,7 @@ header .auth a:last-child{
 .nav-list{
     display: none;
 }
-@media only screen and (max-width:426px) {
+@media only screen and (max-width:947px) {
     header .row .intro nav{
         display: none;
     }
@@ -139,6 +139,15 @@ header .auth a:last-child{
     }
     
 }
+@media only screen and (max-width:330px){
+    header {
+        width: calc( 100% - 10px);
+    }
+    header .row {
+        padding: 0;
+    }
+    
+}
 .unlock .row{
     padding: 121px 0;
     display: flex;
@@ -157,6 +166,8 @@ header .auth a:last-child{
     align-items: center;
     position: relative;
     background: #FCFCFD;
+    border-radius: 8px;
+    border: 1px solid  #F1F1F3;
 }
 .unlock .row .logo .icon1 svg{
     width: 24px;
@@ -232,6 +243,7 @@ header .auth a:last-child{
     gap: 16px;
     align-items: center;
     position: relative;
+
 }
 .explore a:last-child{
     display: flex;
@@ -245,13 +257,13 @@ header .auth a:last-child{
     line-height: 150%;
     padding: 14px 20px;
 }
-@media only screen and (max-width:426px){
+@media only screen and (max-width:600px){
     .unlock .row{
-        padding: 91px 30px;
+        padding: 0;
     }
     .unlock .row .logo{
         display: flex;
-        padding: 14px;
+        padding: 8px;
         justify-content: center;
         align-items: center;
         align-content: center;
@@ -275,8 +287,38 @@ header .auth a:last-child{
     .discription p:first-child {
         font-size: 24px;
     }
+    .mainsection .icon svg {
+        width: 31px;
+        height: 43px;
+        left: 1px;
+        top: 6px;
+    }
 
-
+}
+@media screen and (max-width:330px) {
+    .unlock .row .mainsection .logo p {
+        font-size: 13px;
+    }
+    .unlock .row .mainsection .logo  span {
+        font-size: 13px;
+    }
+    .unlock .row .logo{
+        padding: 8px;
+    }
+    .unlock .row .logo .icon1 svg{
+        width: 18px;
+        height: 18px;
+        padding: 7px;
+    }
+    .explore a:first-child{
+        padding: 14px 10px;
+    }
+    .mainsection .icon svg {
+        width: 30px;
+        height: 43px;
+        left: 0px;
+        top: 9px;
+    }
 }
 .sits{
     display: flex;
@@ -306,7 +348,7 @@ header .auth a:last-child{
     left: -9px;
     top: 5px;
 }
-@media only screen and (max-width:426px){
+@media only screen and (max-width:600px){
     .sits .counter{
         width: calc(100% - 16px);
     }
@@ -331,7 +373,7 @@ header .auth a:last-child{
     width: 100%;
     margin: auto;
 }
-@media only screen and (max-width:426px){
+@media only screen and (max-width:600px){
     
 }
 .benefits .row{
@@ -434,7 +476,7 @@ header .auth a:last-child{
     padding: 10px;
     box-sizing: content-box;
 }
-@media screen and (max-width:426px) {
+@media screen and (max-width:600px) {
     .benefits .counter{
         width: calc(100% - 32px);
     }
@@ -580,7 +622,7 @@ header .auth a:last-child{
     background:  #F7F7F8;
 }
 
-@media screen and (max-width:426px){
+@media screen and (max-width:600px){
     .our-cources .counter {
         width: calc(100% - 32px);
     }
@@ -692,7 +734,7 @@ header .auth a:last-child{
     font-weight: 600;
     line-height: 150%; 
 }
-@media screen and (max-width:426px){
+@media screen and (max-width:600px){
     .testimonials .counter{
         width: calc(100% - 32px);
     }
@@ -717,6 +759,38 @@ header .auth a:last-child{
     .cources-discription .discription-button p {
         width: 100%;
     }
+}
+@media screen and (max-width:330px){
+    .testimonials .counter{
+        width: calc(100% - 8px);
+    }
+    .testimonials .row{
+        padding: 0;
+    }
+    .comments{
+        width: fit-content;
+    }
+    .comments .row2{
+        width: 100%;
+    }
+    .comments .row2 .comment{
+        width: 100%;
+    }
+    .comment .opinion{
+        padding: 30px;
+    }
+    .comment .person{
+        padding: 20px 30px;
+    }
+    .cources-discription .discription-button p {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 330px) {
+    .benefits .counter{
+        width: calc(100% - 8px);
+    }
+    
 }
 .pricing .row{
     display: flex;
@@ -887,7 +961,7 @@ border: 1px solid  #F1F1F3;
     background:  #FF9500;
     border: #FF9500;
 }
-@media screen and (max-width:426px) {
+@media screen and (max-width:600px) {
     .pricing .counter{
         width: calc(100% - 32px);
     }
@@ -1037,7 +1111,7 @@ footer .counter .end{
     width: 90%;
     margin: auto;
 }
-@media screen and (max-width:426px) {
+@media screen and (max-width:600px) {
     footer .counter{
         width: calc(100%-32px);
         gap: 20px;
@@ -1049,10 +1123,21 @@ footer .counter .end{
     }
     footer .row .subco{
         width: 100%;
-        padding: 30px;
+        
         flex-wrap: wrap;
     }
     footer .row .subco .row3{
         width: calc( (100% - 30px)/2);
+    }
+    .benefits-items {
+        width: fit-content;
+    }
+    .benefits-items .row-items .item{
+        padding: 50px;
+    }
+}
+@media screen and (max-width:330px){
+    .counter{
+        width: calc(100% - 8px);
     }
 }
