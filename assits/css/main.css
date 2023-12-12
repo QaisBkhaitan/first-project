@@ -750,14 +750,24 @@ header .auth a:last-child{
     .comments .row2 .comment{
         width: 100%;
     }
+    .testimonials .comments .comment .person .person-name img{
+        width: 40px;
+    }
     .comment .opinion{
         padding: 30px;
     }
     .comment .person{
-        padding: 20px 30px;
+        padding: 15px 20px;
     }
     .cources-discription .discription-button p {
         width: 100%;
+    }
+    .comment input {
+        font-size: 12px;
+        padding: 11px;
+    }
+    .person-name p{
+        font-size: 13px;
     }
 }
 @media screen and (max-width:330px){
@@ -931,15 +941,17 @@ border: 1px solid  #F1F1F3;
     font-weight: 400;
     line-height: 150%; 
 }
+.true{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 3px;
+   border-radius: 4px;
+   border: 1px solid #FFF4E5;
+   background: #FFF4E5;
+}
 .feature svg{
-    width: 20px; 
-    height: 20px;
-    display: flex;
-    padding: 4px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 4px;
-    background: #FFF4E5;
+    width: 15px;
 }
 .sub form {
     display: flex;
